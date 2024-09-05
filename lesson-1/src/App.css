@@ -1,0 +1,136 @@
+body {
+   font-family: "Poppins", sans-serif;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 12px;
+   align-items: center;
+}
+
+.wrapper {
+   width: 747.8px;
+   position: relative;
+   background: slateblue;
+   height: 500px;
+   border-radius: 30px;
+}
+
+.wrapper h1 {
+   margin-bottom: 30px;
+}
+
+input {
+   outline: none;
+   border: 1px solid #ccc;
+   height: 50px;
+   border-radius: 30px;
+   padding: 15px;
+   width: 400px;
+   font-size: 18px;
+}
+
+.wrapper button {
+   margin-top: 12px;
+   outline: none;
+   width: auto;
+   height: 40px;
+   border-radius: 30px;
+   padding: 5px 30px;
+   font-size: 18px;
+   background: #ccc;
+   cursor: pointer;
+   transition: background-color 500ms;
+}
+
+.wrapper button[disabled],
+.wrapper button[disabled]:hover {
+   background: white;
+   color: #ccc;
+   border: 1px solid #ccc;
+}
+
+.wrapper button:hover {
+   background: rgb(8, 187, 104);
+   color: white;
+}
+
+@media (max-width: 767.8px) {
+   .wrapper {
+      width: 555.8px;
+      height: 350px;
+   }
+}
+
+@media (max-width: 575.8px) {
+   .wrapper {
+      width: 339.8px;
+   }
+
+   .wrapper h1 {
+      margin-bottom: 30px;
+   }
+
+   input {
+      border: 1px solid #ccc;
+      height: 50px;
+      border-radius: 30px;
+      padding: 15px;
+      width: 315px;
+      font-size: 18px;
+   }
+}
+
+@media (max-width: 359.8px) {
+   body {
+      background: slateblue;
+   }
+
+   .wrapper {
+      display: flex;
+   }
+
+   input {
+      border: 1px solid #ccc;
+      height: 50px;
+      border-radius: 30px;
+      padding: 15px;
+      width: 270px;
+      font-size: 18px;
+   }
+}
+
+.error {
+   color: red;
+}
+
+.navWrapper {
+   margin-top: 0;
+   padding: 0;
+   height: 50px;
+   background: rgb(27, 131, 235);
+   display: flex;
+   align-items: center;
+}
+
+.container {
+   max-width: 1240px;
+   margin: 0 auto;
+   color: #000;
+}
+
+.navbar {
+   color: white;
+   text-decoration: none;
+   margin-right: 12px;
+}
